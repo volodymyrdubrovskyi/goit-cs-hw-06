@@ -30,7 +30,7 @@ class CatFramework(BaseHTTPRequestHandler):
         match router:
             case "/":
                 self.send_html("front-init/index.html")
-            case "/contact":
+            case "/message":
                 self.send_html("front-init/message.html")
             case _:
                 file = BASE_DIR.joinpath(router[1:])
